@@ -1,0 +1,263 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+._lfloat{
+    float: left;
+}
+
+._rfloat{
+    float:right;
+}
+
+#body_part{
+    position:relative;
+    width:100%;
+    min-height:88%;
+    top:80px;
+}
+
+/*Defining custom scroll bar for fixed _side
+*/
+#fixed_side::-webkit-scrollbar {
+    width: 4px;
+    height: 5px;
+}
+
+/* Track */
+#fixed_side::-webkit-scrollbar-track {
+    box-shadow: outset 0 0 5px #fdfdfd; 
+    border-radius: 0px;
+}
+ 
+/* Handle */
+#fixed_side::-webkit-scrollbar-thumb {
+    background:#989696;
+    border-radius: 0px;
+}
+
+/* Handle on hover */
+
+
+/*end custom scroll bar design*/
+#fixed_side{
+    border-right: 1.5px solid #ddd;
+    margin-top: 80px;
+    background:#fdfdfd;
+    overflow-y:auto;
+    width:250px;
+    height:589px;
+    position: fixed;
+    
+}
+
+#fixed_side .sub_head{
+    border-bottom: 1px solid #c3bebe;
+    padding: 10px 0px 0px 10px;
+}
+.sub_head::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.sub_head h4{
+    float:left;
+    color:#797474
+}
+.inside_sub_head{
+    width:93%;
+    float: right;
+    display: none;
+}
+.inside_sub_head ul li{
+    list-style:none;
+    padding:5px 0px 0px 0px;
+    color:#554646;
+    cursor: pointer;
+    margin:5px;
+}
+.inside_sub_head ul li:hover{
+    background: red;
+}
+.heading{
+    margin-bottom: 5px;
+    padding:5px;
+    min-height: 20px;
+    cursor: pointer;
+}
+
+
+.heading .arrow_dwn{
+    position: relative;
+    margin-top:-10px;
+    padding:2px;
+    float: right;
+    cursor: pointer;
+}
+
+._head_color{
+    color:#645c5c;
+}
+#movable_side{
+    
+    position: relative;
+    width:81%;
+    top: 80px;
+    margin-left: 255px;
+    min-height:589px;
+}
+
+/**
+*   body content will have two div
+*   First will have all the questions displayed with answers
+*   and second will have place for ads
+*   initially there will be only one div for questions not ads
+*/
+
+#body_content{
+    position: relative;
+    width:100%;
+    min-height:500px;
+}
+
+#question_container{
+    padding:10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    min-height: 500px;
+    background: #ccc;
+}
+
+#question_container .questions_card{
+    position: relative;
+    border-bottom:1.5px solid #d6d6d6;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.question{
+    padding:5px 5px 3px 10px;
+}
+.question p{
+    color:#3d3d3d;
+}
+.questions_card::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.question_down_icon{
+    position: relative;
+    float: right;
+    display: inline-block;
+    text-align: right;
+    color:#4f5152;
+    padding:0px 10px 0px 15px;
+}
+.question_down_icon p{
+    cursor: pointer;
+}
+
+/*
+<i class="fa fa-angle-double-down"></i>
+<i class="fa fa-angle-double-up"></i>
+*/
+
+/* inside movable parts*/
+
+/*
+creating main body for register page
+*/
+#bodyContent{
+    width:100%;
+    height:100%;
+    position: absolute;
+}
+.toP{
+    top:80px;
+}
+#form_content{
+    position: relative;
+    height:480px;
+    top:80px;
+}
+#form{
+    position:relative;
+    top:70px;
+    width:50%;
+    height:340px;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid #1572d0;
+    border-radius: 4px;
+}
+#frm{
+    text-align: center;
+    width:49%;
+    padding:5px;
+}
+#frm input[type="text"], #frm input[type="password"]{
+    width:80%;
+    height:40px;
+    border:1.5px solid #5ea4ea;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+#frm_logo{
+    width:49%;
+    border-right: 2px solid #ddd;
+    height: inherit;
+}
+#rgs_heading{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#0b6c4a;
+    border-bottom:1px solid #1572d0;
+    height:25px;
+    margin-bottom: 30px;
+    padding-top:20px; 
+}
+#rgs_heading h3{
+    color:#738c96;
+}
+#frm select, input[type="submit"]{
+    width:41%;
+    height:40px;
+    color:#777;
+    border:none;
+    
+    
+}
+#frm input[type="submit"]{
+    background:#45acf8;
+    color:#fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#frm select{
+    padding-left: 10px;
+    padding-right: 10px;
+    background:#fff;
+    border:1.5px solid #5ea4ea;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.ab{
+    padding:15px;
+    color:gren;
+}
+
+/*after login page codology*/
+#sub_content{
+    display: grid;
+    position: relative;
+    height:480px;
+    top:80px;
+}
